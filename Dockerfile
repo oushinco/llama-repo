@@ -12,16 +12,16 @@ ENV TRANSFORMERS_CACHE /tmp/cache
 COPY requirements.txt ./
 
 # Install project dependencies from requirements.txt
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Install poetry (Python package manager)
-RUN pip install poetry
+# RUN pip install poetry
 
 # Copy the pyproject.toml and pyproject.lock files into the container
-COPY pyproject.toml ./app/
+# COPY pyproject.toml ./
 
 # Install project dependencies using poetry
-RUN poetry install --no-root --no-dev
+# RUN poetry install --no-root --no-dev
 
 # Copy the rest of the application code into the container
 COPY . .
