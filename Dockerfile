@@ -18,7 +18,7 @@ COPY requirements.txt ./
 RUN pip install poetry
 
 # Copy the pyproject.toml and pyproject.lock files into the container
-COPY pyproject.toml ./
+COPY pyproject.toml ./app/
 
 # Install project dependencies using poetry
 RUN poetry install --no-root --no-dev
