@@ -7,6 +7,7 @@ WORKDIR /app
 # Set the Transformers cache directory to /app/cache (or any other writable path)
 ENV TRANSFORMERS_CACHE /tmp/cache
 
+RUN pip install packaging
 
 # Copy the requirements.txt file into the container
 COPY requirements.txt ./
