@@ -16,7 +16,7 @@ sleep 15
 
 # Start the model worker
 # python -m llava.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path liuhaotian/llava-v1.5-7b --load-8bit &
-python -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.5 & 
+python -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.5 --device cpu & 
 
 sleep 300
 
