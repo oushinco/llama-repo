@@ -19,6 +19,7 @@ transformers>=4.31.0
 protobuf
 gradio
 einops
+packaging
 flash-attn>=2.0
 wandb
 openai<1
