@@ -16,9 +16,12 @@ sleep 15
 
 # Start the model worker
 # python -m llava.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path liuhaotian/llava-v1.5-7b --load-8bit &
-# CUDA_VISIBLE_DEVICES=0 python -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.5 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000
-python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path lmsys/vicuna-7b-v1.5 & 
-python -m fastchat.serve.test_message --model-name vicuna-7b-v1.5 &
+# CUDA_VISIBLE_DEVICES=0 python -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.5 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 &
+
+# python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path lmsys/vicuna-7b-v1.5 & 
+
+python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-7b-chat-hf & 
+# python -m fastchat.serve.test_message --model-name vicuna-7b-v1.5 &
 
 sleep 300
 
