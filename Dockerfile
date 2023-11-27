@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Install project dependencies using poetry
 # RUN poetry install --no-root --no-dev
 
-RUN pip install  flash-attn>=2.0
+# RUN pip install  flash-attn>=2.0
 
 # Copy the rest of the application code into the container
 COPY . .
