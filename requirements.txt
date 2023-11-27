@@ -22,7 +22,7 @@ peft
 protobuf
 gradio
 einops
-flash-attn>=2.0
+#flash-attn>=2.0
 wandb
 openai<1
 anthropic>=0.3
