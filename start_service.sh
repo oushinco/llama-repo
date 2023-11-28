@@ -20,7 +20,7 @@ sleep 15
 
 # python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path lmsys/vicuna-7b-v1.5 & 
 
-python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-7b-chat-hf & 
+python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-70b-chat-hf & 
 # python -m fastchat.serve.test_message --model-name vicuna-7b-v1.5 &
 
 sleep 300
