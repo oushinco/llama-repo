@@ -24,8 +24,8 @@ sleep 15
 #python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path lmsys/vicuna-33b-v1.3 & 
 #python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path mistralai/Mistral-7B-v0.1 & 
 # python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-7b-chat-hf & 
-# python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-13b-chat-hf & 
-python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path mistralai/Mixtral-8x7B-Instruct-v0.1 & 
+python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path meta-llama/Llama-2-13b-chat-hf & 
+# python -m fastchat.serve.model_worker --host 0.0.0.0 --controller http://localhost:21001 --port 31000 --worker http://localhost:31000 --model-path mistralai/Mixtral-8x7B-Instruct-v0.1 & 
 
 sleep 300
 
